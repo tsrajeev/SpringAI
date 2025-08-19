@@ -1,4 +1,4 @@
-package com.oreilly.springaicourse;
+package com.springai;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.ai.chat.client.ChatClient;

@@ -1,4 +1,4 @@
-package com.oreilly.springaicourse;
+package com.springai;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.oreilly.springaicourse;
+package com.springai;
 
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Service;

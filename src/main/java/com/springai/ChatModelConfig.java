@@ -1,4 +1,4 @@
-package com.oreilly.springaicourse;
+package com.springai;
 
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.openai.OpenAiChatModel;

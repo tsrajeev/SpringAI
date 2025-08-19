@@ -1,4 +1,4 @@
-package com.oreilly.springaicourse;
+package com.springai;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

@@ -1,4 +1,4 @@
-package com.oreilly.springaicourse;
+package com.springai;
 
 import org.junit.jupiter.api.Test;
 // Tool callback imports removed - relying on Spring AI auto-configuration

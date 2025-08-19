@@ -1,1 +1,1 @@
-rootProject.name = "springaicourse"
+rootProject.name = "springai"
