@@ -171,6 +171,3 @@ The project supports two vector store implementations:
    - Requires a running Redis Stack instance
    - Includes data detection to avoid reprocessing on restart
 
-## Training Course Structure
-
-This is a **hands-on training course** where students implement Spring AI functionality progressively:
