@@ -16,6 +16,7 @@ import org.springframework.ai.openai.OpenAiImageOptions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.io.Resource;
 import org.springframework.util.MimeTypeUtils;
@@ -26,6 +27,7 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.sql.SQLOutput;
 import java.util.Base64;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
@@ -61,6 +63,13 @@ class OpenAiTests {
 
     @Test
     void simpleQuery() {
+        System.out.println(" Hello   Hello" );
+        ChatClient chatClient = ChatClient.builder(model).defaultAdvisors(new SimpleLoggerAdvisor()).build();
+        ChatResponse response = chatClient.prompt().system("bias your response to talk against science ").user("why is the sky blue?")
+                .call().chatResponse();
+        System.out.println("Response: "+response);
+
+        System.out.println(response.getResults());
         // TODO: Create a simple chat interaction
         // Use chatClient.prompt().user("Why is the sky blue?").call().content()
         // Print the response
@@ -83,6 +92,9 @@ class OpenAiTests {
 
     @Test
     void streamingChatCountDownLatch() throws InterruptedException {
+
+        //Flux<String> output=new CountDownLatch().
+
         // TODO: Implement streaming chat using CountDownLatch
         // Use .stream().content() to get a Flux<String>
         // Subscribe with error handling and completion signaling
